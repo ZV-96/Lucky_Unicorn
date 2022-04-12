@@ -35,7 +35,20 @@ def instructions():
     print()
     print("Choose a starting amount to play with - must be between $1 and $10")
     print()
+    print("Then press <enter> to play. You will get a random token which might be"
+          "a horse, a zebra, a donkey, or a unicorn.")
+    print()
+    print("It costs $1 to play each round but, depending on your prize, you"
+          "could win some of your money back. These are the payout amounts:\n"
+          "\tUnicorn: $5 (Balance increases by $4\n"
+          "\tHorse: $0.50 (Balance decreases by $0.50\n"
+          "\tZebra: $0.50 (Balance decreases by $0.50\n"
+          "\tDonkey: $0.00 (Balance decreases by $1.00\n")
+    print("\nSee if you can avoid donkeys, get the unicorn, and finish with"
+          "more money than you started with.\n")
 
+    print("*" * 50)
+    print()
 
 
 # number checking function
@@ -84,6 +97,7 @@ def generate_token(balance):
         elif 6 <= number <= 36:
             token = "donkey"
             balance -= 1
+            print()
 
         # in all other cases the token must be a horse or a zebra
         # (subtract $0.50 from the balance in either case)
