@@ -1,5 +1,5 @@
-"""LU base component - Based on 00_LU_Base_v1
-components added after they have been created and tested
+"""LU base component - Based on 00_LU_Base_v2
+Adding instructions to instructions function and further text decoration
 """
 import random
 
@@ -30,10 +30,12 @@ def yes_no(question_text):
 
 # Function that displays instructions
 def instructions():
-    print("***** How to Play *****")
     print()
-    print("The rules of the game will go here")
+    print(formatter("*", "How to Play"))
     print()
+    print("Choose a starting amount to play with - must be between $1 and $10")
+    print()
+    
 
 
 # number checking function
