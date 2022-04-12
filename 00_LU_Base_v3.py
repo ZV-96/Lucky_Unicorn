@@ -35,7 +35,7 @@ def instructions():
     print()
     print("Choose a starting amount to play with - must be between $1 and $10")
     print()
-    
+
 
 
 # number checking function
