@@ -44,6 +44,19 @@ while play_again != "x":
             balance -= 0.5
 
     # output
-    print(f"Round {rounds_ro}")
+    print(f"Round {rounds_played}. Token: {token}, Balance: ${balance:.2f}")
+    if balance < 1:
+        print("\nSorry you have run out of money")
+        play_again = "x"
+    else:
+        play_again = input("\nDo you want to play another round?\n<enter> to play"
+                           "again or 'X' to exit").lower()
+    print()
+
+print("Thanks for playing!")
+print(f"You started with: ${TEST_AMOUNT:.2f}")
+print(f"and leave with :{balance:.2f}")
+print("Goodbye")
+
 
 
