@@ -39,7 +39,6 @@ for item in range(10):
             token = "horse"
             balance -= 0.5
 
-
     # output
     print(f"Token: {token}, Balance: ${balance:.2f}")
 
